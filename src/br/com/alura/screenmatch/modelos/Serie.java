@@ -10,6 +10,11 @@ public class Serie extends Titulo {
         super(nome, anoDeLancamento);
     }
 
+    @Override
+    public String toString() {
+        return "Série: " + this.getNome() + " (" + this.getAnoDeLancamento() + ")";
+    }
+
     public int getTemporadas() {
         return temporadas;
     }
